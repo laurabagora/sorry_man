@@ -266,3 +266,31 @@ footer {
   }
 }
 
+.showcase-subtitle {
+  text-align: center;
+  color: #a5d6a7; 
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: -30px; 
+  margin-bottom: 23px;
+  letter-spacing: 1px;
+
+}
+.instagram-button {
+  display: inline-block;
+  background: #1a892c;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: background 0.3s;
+  margin-bottom: 20px;
+}
+
+.instagram-button:hover {
+  background: #4caf50;
+}
+
