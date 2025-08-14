@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/gallery.css">
+    <title>SORRY, MAN</title>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo-section">
+            <img src="images/logo.png" alt="Sorry Man Logo" class="logo"> 
+            <h1>SORRY, MAN</h1>
+        </a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="showcase.html">Showcase</a></li>
+                <li><a href="upcoming.html">Upcoming</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="lightbox" id="lightbox">
+      <span class="lightbox-close" id="lightbox-close">&times;</span>
+      <img src="" alt="Expanded Photo" id="lightbox-img">
+    </div>
+
+    <h2 class="gallery-title">Gallery</h2>
+    <p class="showcase-subtitle">Photos captured by John Guerrero</p>
+    <p class="showcase-subtitle">Intagram - <b>@Greenlightfotography</b></p>
+
+    <section class="gallery">
+        <img src="images/gallery/photo1.png" alt="Photo 1" class="item1">
+        <img src="images/gallery/photo2.png" alt="Photo 2" class="item2">
+        <img src="images/gallery/photo3.png" alt="Photo 3" class="item3">
+        <img src="images/gallery/photo4.png" alt="Photo 4" class="item4">
+        <img src="images/gallery/photo5.png" alt="Photo 5" class="item5">
+        <img src="images/gallery/photo6.png" alt="Photo 6" class="item6">
+        <img src="images/gallery/photo7.png" alt="Photo 7" class="item7">
+        <img src="images/gallery/photo8.png" alt="Photo 8" class="item8">
+        <img src="images/gallery/photo9.png" alt="Photo 9" class="item9">
+        <img src="images/gallery/photo10.png" alt="Photo 10" class="item10">
+        <img src="images/gallery/photo11.png" alt="Photo 11" class="item11">
+        <img src="images/gallery/photo12.png" alt="Photo 12" class="item12">
+        <img src="images/gallery/photo13.png" alt="Photo 13" class="item13">
+        <img src="images/gallery/photo14.png" alt="Photo 14" class="item14">
+        <img src="images/gallery/photo15.png" alt="Photo 15" class="item15">
+    </section>
+
+    <footer>
+        <p>© 2025 Laura Guerrero | All Rights Reserved</p>
+    </footer>
+<script>
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const lightboxClose = document.getElementById('lightbox-close');
+
+  document.querySelectorAll('section.gallery img').forEach(img => {
+    img.addEventListener('click', () => {
+      lightbox.style.display = 'flex';
+      lightboxImg.src = img.src;
+      lightboxImg.alt = img.alt;
+    });
+  });
+
+  lightboxClose.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+  });
+
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) {
+      lightbox.style.display = 'none';
+    }
+  });
+</script>
+</body>
+</html>
