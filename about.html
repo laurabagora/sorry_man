@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/about.css">
+    <title>SORRY, MAN</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo-section">
+            <img src="images/logo.png" alt="Sorry Man Logo" class="logo"> 
+            <h1>SORRY, MAN</h1>
+        </a>
+        <nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="showcase.html">Showcase</a></li>
+                <li><a href="upcoming.html">Upcoming</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h2 class="showcase-title">About the Band</h2>
+      <div class="band-container">
+        <img src="images/about/band.png" alt="The Band" class="band-photo" />
+        <div class="band-bio">
+          <p>
+            Sorry-Man is a high-energy fusion of rock, funk, and a dash of chaos based out of Bozeman, Montana. Formed in 2024, the band has been shaking up local venues with electrifying performances and unforgettable grooves. Whether they're headlining festivals or jamming in underground clubs, Sorry-Man delivers music that makes you move, laugh, and sometimes even think.<br></br>
+            <a href="https://instagram.com/sorry_man_band" target="_blank" class="instagram-button">Instagram</a>
+            <a href="https://instagram.com/sorry_man_band" target="_blank" class="instagram-button">Facebook</a>
+          </p>
+      
+        </div>
+      </div>
+
+      <section class="info-section">
+        <div class="container">
+            <div class="info-card">
+                <h3>Aaron Matye</h3>
+                <p>Melting Lead Guitar<br></p>
+                <img src="images/home/aaron.jpg" alt="aaron photo" class="info-card-img" data-large="images/about/aaron-large.png"> 
+            </div>
+            <div class="info-card">
+                <h3>Alex Guerrero</h3>
+                <p>Rippin the Bass</p>
+                <img src="images/home/alex.jpg" alt="alex photo" class="info-card-img" data-large="images/about/alex-large.png"> 
+            </div>
+
+            <div class="info-card">
+                <h3>Dominic Scotto</h3>
+                <p>Man with the Velvet Voice</p>
+                <img src="images/home/dom.jpg" alt="dom photo" class="info-card-img" data-large="images/about/dom-large.png"> 
+            </div>
+
+            <div class="info-card">
+                <h3>Jacob Van de Ven</h3>
+                <p>Smashing the Drums</p>
+                <img src="images/home/jacob.jpg" alt="jacob photo" class="info-card-img" data-large="images/about/jacob-large.png"> 
+            </div>
+        </div>
+    </section>
+    <div id="photoModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalImage" alt="Enlarged Band Member Photo" />
+    </div>
+
+    <footer>
+        <p>2025 Laura Guerrero | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        const modal = document.getElementById('photoModal');
+        const modalImg = document.getElementById('modalImage');
+        const closeBtn = modal.querySelector('.close');
+        const menuToggle = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+        const bandPhotos = document.querySelectorAll('.info-card-img');
+
+        bandPhotos.forEach(photo => {
+          photo.style.cursor = 'pointer';
+          photo.addEventListener('click', () => {
+            const largeSrc = photo.getAttribute('data-large') || photo.src;
+            modal.style.display = 'flex';
+            modalImg.src = largeSrc;
+            modalImg.alt = photo.alt;
+          });
+        });
+
+        closeBtn.addEventListener('click', () => {
+          modal.style.display = 'none';
+        });
+
+        modal.addEventListener('click', (e) => {
+          if (e.target === modal) {
+            modal.style.display = 'none';
+          }
+        });
+
+        menuToggle.addEventListener('click', () => {
+          navLinks.classList.toggle('active');
+          menuToggle.classList.toggle('open');
+        });
+    </script>
+
+    </body>
+</html>
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/upcoming.css">
+    <title>SORRY, MAN</title>
+</head>
+<body>
+  <header>
+      <a href="index.html" class="logo-section">
+          <img src="images/logo.png" alt="Sorry Man Logo" class="logo"> 
+          <h1>SORRY, MAN</h1>
+      </a>
+      <nav>
+          <div class="menu-toggle" id="mobile-menu">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+          </div>
+          <ul class="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="showcase.html">Showcase</a></li>
+              <li><a href="upcoming.html">Upcoming</a></li>
+              <li><a href="about.html">About</a></li>
+          </ul>
+      </nav>
+  </header>
+
+  <h2 class="showcase-title">Upcoming Events</h2>
+  <p class="showcase-subtitle">Explore upcoming gigs, shows, and more</p>
+
+  <div class="show-container">
+    <img src="images/upcoming/show1.png" alt="Show Flyer" class="show-photo" id="showPhoto">
+    <div class="show-details">
+      <div class="show-date">July 19, 2025</div>
+      <div class="show-name">Aurora Fallen with Lucy was Right & Sorry, Man</div>
+      <div class="show-venue">The Filling Station</div>
+      <div class="show-extra">Doors open at 7 PM. $10 at the door. 21+</div>
+    </div>
+  </div>
+
+  <div id="photoModal" class="modal">
+    <span class="close" id="closeBtn">&times;</span>
+    <img class="modal-content" id="modalImage" alt="Enlarged Show Flyer">
+  </div>
+
+  <footer>
+      <p>2025 Laura Guerrero | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    const modal = document.getElementById('photoModal');
+    const modalImg = document.getElementById('modalImage');
+    const photo = document.getElementById('showPhoto');
+    const closeBtn = document.getElementById('closeBtn');
+    const menuToggle = document.getElementById('mobile-menu');
+    const navLinks = document.querySelector('.nav-links');
+
+    photo.addEventListener('click', () => {
+      modal.style.display = 'flex';
+      modalImg.src = photo.src;
+      modalImg.alt = photo.alt;
+    });
+
+    closeBtn.addEventListener('click', () => {
+      modal.style.display = 'none';
+    });
+
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.style.display = 'none';
+      }
+    });
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      menuToggle.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
+
