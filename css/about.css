@@ -405,3 +405,26 @@ footer {
     border-radius: 8px;
   }
 }
+@media (max-width: 600px) {
+  .menu-toggle {
+    height: 24px;     
+    align-self: center; 
+  }
+
+  .menu-toggle span {
+    height: 2px;      
+  }
+
+  .logo-section img.logo {
+    height: 35px;
+  }
+
+  .logo-section h1 {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+  }
+
+  header {
+    padding: 12px 20px; 
+  }
+}
