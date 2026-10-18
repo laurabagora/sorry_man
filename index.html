@@ -6,68 +6,44 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
     <title>SORRY, MAN</title>
+    <link rel="stylesheet" href="css/redesign.css">
 </head>
 <body>
-
-<header>
-    <a href="index.html" class="logo-section">
-        <img src="images/logo.png" alt="Sorry Man Logo" class="logo"> 
-        <h1>SORRY, MAN</h1>
-    </a>
-    <nav>
-        <div class="menu-toggle" id="mobile-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="showcase.html">Showcase</a></li>
-            <li><a href="upcoming.html">Upcoming</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
-    </nav>
-</header>
+  <header>
+      <a href="index.html" class="logo-section">
+          <img src="images/logo.png" alt="Sorry Man Logo" class="logo"> 
+          <h1>SORRY, MAN</h1>
+      </a>
+      <nav>
+          <div class="menu-toggle" id="mobile-menu">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+          </div>
+          <ul class="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="showcase.html">Music</a></li>
+              <li><a href="upcoming.html">Shows</a></li>
+              <li><a href="about.html">About</a></li>
+          </ul>
+      </nav>
+  </header>
 
 
     <section class="banner"></section>
+<section class="release-hero"><div class="release-content"><span class="eyebrow"><span class="live-dot"></span> NEW SINGLE · OUT NOW</span><h2>JACOB<br><em>THE CAT.</em></h2><p>Fresh from SORRY, MAN. Turn it up, play it loud, and take the chaos with you.</p><div class="stream-links"><a class="stream-btn spotify" href="https://open.spotify.com/track/7meK8Up75BnZF5uJuqr6g3" target="_blank" rel="noopener noreferrer">Spotify ↗</a><a class="stream-btn apple" href="https://music.apple.com/us/album/jacob-the-cat-single/6823694688" target="_blank" rel="noopener noreferrer">Apple Music ↗</a><a class="stream-btn youtube" href="https://www.youtube.com/watch?v=KooEp88v5Sg" target="_blank" rel="noopener noreferrer">▶ YouTube ↗</a></div><a class="subtle-link" href="showcase.html">Explore the music ↓</a></div><div class="release-art"><span class="record-ring"><img class="record-cover" src="https://img.youtube.com/vi/KooEp88v5Sg/hqdefault.jpg" alt="Jacob the Cat release artwork"></span></div></section>
 
     <section class="info-section">
+        <p class="member-instruction">MEET THE BAND <span>— Tap a member to see their photo ↗</span></p>
         <div class="container">
-            <div class="info-card">
-                <h3>Alex Guerrero</h3>
-                <p>Rippin the Bass</p>
-                <img src="images/home/alex.jpg" alt="alex photo" class="info-card-img" data-large="images/about/alex-large.png"> 
-            </div>
+            <button class="info-card band-member-card" type="button" data-name="Alex Guerrero" data-description="Rippin the Bass" data-large="images/about/alex-large.png" aria-label="View Alex Guerrero photo"><h3>Alex Guerrero</h3><p>Rippin the Bass</p><img src="images/home/alex.jpg" alt="Alex Guerrero" class="info-card-img" loading="lazy"></button>
 
-            <div class="info-card">
-                <h3>Dominic Scotto</h3>
-                <p>Man with the Velvet Voice</p>
-                <img src="images/home/dom.jpg" alt="dom photo" class="info-card-img" data-large="images/about/dom-large.png"> 
-            </div>
+            <button class="info-card band-member-card" type="button" data-name="Dominic Scotto" data-description="Man with the Velvet Voice" data-large="images/about/dom-large.png" aria-label="View Dominic Scotto photo"><h3>Dominic Scotto</h3><p>Man with the Velvet Voice</p><img src="images/home/dom.jpg" alt="Dominic Scotto" class="info-card-img" loading="lazy"></button>
 
-            <div class="info-card">
-                <h3>Jacob Van de Ven</h3>
-                <p>Smashing the Drums</p>
-                <img src="images/home/jacob.jpg" alt="jacob photo" class="info-card-img" data-large="images/about/jacob-large.png"> 
-            </div>
+            <button class="info-card band-member-card" type="button" data-name="Jacob Van de Ven" data-description="Smashing the Drums" data-large="images/about/jacob-large.png" aria-label="View Jacob Van de Ven photo"><h3>Jacob Van de Ven</h3><p>Smashing the Drums</p><img src="images/home/jacob.jpg" alt="Jacob Van de Ven" class="info-card-img" loading="lazy"></button>
         </div>
     </section>
-    <div id="photoModal" class="modal">
-      <span class="close">&times;</span>
-      <img class="modal-content" id="modalImage" alt="Enlarged Band Member Photo" />
-    </div>
-
-  <section class="showcase">
-  <div class="song-container" data-audio="songs/groove_off.mp3">
-    <img src="images/showcase/play.png" alt="Play Song 1" class="play-button">
-    <div class="song-info">
-      <div class="song-name">Groovin Off</div>
-      <img src="images/showcase/soundwave.png" alt="Sound Wave" class="sound-wave">
-    </div>
-  </div>
-</section>
 <p class="showcase-subtitle">Follow us on:</p>
 <p class="showcase-subtitle">
 <a href="https://instagram.com/sorry_man_band" target="_blank" class="instagram-button">
@@ -78,76 +54,40 @@
 </a>
 </p>
 
-<footer>
-    <p>2025 Laura Guerrero | All Rights Reserved</p>
+<footer class="site-footer" aria-label="Site footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="footer-wordmark" href="index.html" aria-label="SORRY, MAN home">SORRY, MAN<span class="footer-period">.</span></a>
+        <p>Rock. Funk. A little chaos.<br>Bozeman, Montana.</p>
+      </div>
+      <nav class="footer-group" aria-label="Footer navigation">
+        <h2>EXPLORE</h2>
+        <a href="index.html">Home</a>
+        <a href="about.html">About the band</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="showcase.html">Music</a>
+        <a href="upcoming.html">Shows</a>
+      </nav>
+      <div class="footer-group">
+        <h2>LISTEN</h2>
+        <a href="https://open.spotify.com/artist/35C8Cw4miTjf47vsxWReOQ" target="_blank" rel="noopener noreferrer">Spotify <span aria-hidden="true">↗</span></a>
+        <a href="https://music.apple.com/us/artist/sorry-man/1539362294" target="_blank" rel="noopener noreferrer">Apple Music <span aria-hidden="true">↗</span></a>
+        <a href="https://www.youtube.com/channel/UCOvNgJf-KdEIZP_Y8lzW1tQ" target="_blank" rel="noopener noreferrer">YouTube <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="footer-group">
+        <h2>FOLLOW</h2>
+        <a href="https://instagram.com/sorry_man_band" target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">↗</span></a>
+        <a href="https://www.facebook.com/profile.php?id=61576721317134" target="_blank" rel="noopener noreferrer">Facebook <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 SORRY, MAN. All rights reserved.</p>
+      <p>Website by Laura Guerrero</p>
+    </div>
+  </div>
 </footer>
 <script>
-  const audio = new Audio();
-  let currentPlayingContainer = null;
-
-  document.querySelectorAll('.song-container').forEach(container => {
-    container.addEventListener('click', () => {
-      const songSrc = container.getAttribute('data-audio');
-
-      if (currentPlayingContainer === container) {
-        // Pause the current song
-        audio.pause();
-        container.classList.remove('playing');
-        currentPlayingContainer = null;
-      } else {
-        // If another song is playing, reset that container
-        if (currentPlayingContainer) {
-          currentPlayingContainer.classList.remove('playing');
-        }
-        audio.src = songSrc;
-        audio.play();
-        container.classList.add('playing');
-        currentPlayingContainer = container;
-      }
-    });
-  });
-
-  window.addEventListener('click', (e) => {
-    if (!e.target.closest('.song-container')) {
-      audio.pause();
-      if (currentPlayingContainer) {
-        currentPlayingContainer.classList.remove('playing');
-        currentPlayingContainer = null;
-      }
-    }
-  });
-
-  audio.addEventListener('ended', () => {
-    if (currentPlayingContainer) {
-      currentPlayingContainer.classList.remove('playing');
-      currentPlayingContainer = null;
-    }
-  });
-const modal = document.getElementById('photoModal');
-const modalImg = document.getElementById('modalImage');
-const closeBtn = modal.querySelector('.close');
-
-const bandPhotos = document.querySelectorAll('.info-card-img');
-
-bandPhotos.forEach(photo => {
-  photo.style.cursor = 'pointer';
-  photo.addEventListener('click', () => {
-    const largeSrc = photo.getAttribute('data-large') || photo.src;
-    modal.style.display = 'flex';
-    modalImg.src = largeSrc;
-    modalImg.alt = photo.alt;
-  });
-});
-
-closeBtn.addEventListener('click', () => {
-  modal.style.display = 'none';
-});
-
-modal.addEventListener('click', (e) => {
-  if (e.target === modal) {
-    modal.style.display = 'none';
-  }
-});
 const menuToggle = document.getElementById('mobile-menu');
 const navLinks = document.querySelector('.nav-links');
 
@@ -156,6 +96,8 @@ menuToggle.addEventListener('click', () => {
   menuToggle.classList.toggle('open');
 });
 </script>
+<div class="member-modal" id="member-modal" role="dialog" aria-modal="true" aria-label="Band member photo" aria-hidden="true"><div class="member-modal-panel"><button type="button" class="member-modal-close" aria-label="Close band member photo">&times;</button><img id="member-modal-image" src="" alt=""></div></div>
+<script src="js/band-members.js" defer></script>
 </body>
 </html>
 

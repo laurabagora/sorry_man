@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/upcoming.css">
     <title>SORRY, MAN</title>
+    <link rel="stylesheet" href="css/redesign.css">
 </head>
 <body>
   <header>
@@ -22,18 +23,38 @@
           <ul class="nav-links">
               <li><a href="index.html">Home</a></li>
               <li><a href="gallery.html">Gallery</a></li>
-              <li><a href="showcase.html">Showcase</a></li>
-              <li><a href="upcoming.html">Upcoming</a></li>
+              <li><a href="showcase.html">Music</a></li>
+              <li><a href="upcoming.html">Shows</a></li>
               <li><a href="about.html">About</a></li>
           </ul>
       </nav>
   </header>
 
-  <h2 class="showcase-title">Upcoming Events</h2>
-  <p class="showcase-subtitle">Explore upcoming gigs, shows, and more</p>
+  <section class="page-intro" aria-label="Page introduction"><p class="page-kicker">SORRY, MAN / LIVE SHOWS</p><h2 class="page-title">UPCOMING EVENTS</h2><p class="page-description">Past performances and upcoming announcements</p></section>
+
+  <h3 class="archive-label">PAST SHOWS</h3>
+
+    <div class="show-container">
+    <img src="images/upcoming/show_6.png" alt="Show Flyer" class="show-photo" id="showPhoto">
+    <div class="show-details">
+      <div class="show-date">October 16, 2026</div>
+      <div class="show-name">Labor Temple</div>
+      <div class="show-extra">Doors open at 6pm. $10 at the door. ALL AGES.</div>
+    </div>
+  </div>
+
+    <div class="show-container">
+    <img src="images/upcoming/show_5.png" alt="Show Flyer" class="show-photo" id="showPhoto">
+    <div class="show-details">
+      <div class="show-date">April 5, 2026</div>
+      <div class="show-name">Spice Dreams</div>
+      <div class="show-venue">GranTee Convention Center</div>
+      <div class="show-extra">Show starts at 8pm. $15 at the door. </div>
+    </div>
+  </div>
 
   <div class="show-container">
-    <img src="images/upcoming/show2.png" alt="Show Flyer" class="show-photo" id="showPhoto">
+    <img src="images/upcoming/show_4.png" alt="Show Flyer" class="show-photo" id="showPhoto">
     <div class="show-details">
       <div class="show-date">February 13, 2026</div>
       <div class="show-name">Anti Valentines Day</div>
@@ -42,8 +63,8 @@
     </div>
   </div>
 
-  <div class="show-container">
-    <img src="images/upcoming/show1.png" alt="Show Flyer" class="show-photo" id="showPhoto">
+    <div class="show-container">
+    <img src="images/upcoming/show_3.png" alt="Show Flyer" class="show-photo" id="showPhoto">
     <div class="show-details">
       <div class="show-date">July 19, 2025</div>
       <div class="show-name">Aurora Fallen with Lucy was Right & Sorry, Man</div>
@@ -52,14 +73,63 @@
     </div>
   </div>
 
+      <div class="show-container">
+    <img src="images/upcoming/show_2.png" alt="Show Flyer" class="show-photo" id="showPhoto">
+    <div class="show-details">
+      <div class="show-date">June 5, July 9, July 23, August 6, August 30, 2025</div>
+      <div class="show-name">Belgrade Summer Nights</div>
+      <div class="show-venue">Belgrade Community Center</div>
+      <div class="show-extra">Show starts at 6 PM.</div>
+    </div>
+  </div>
+
+    <div class="show-container">
+    <img src="images/upcoming/show_1.png" alt="Show Flyer" class="show-photo" id="showPhoto">
+    <div class="show-details">
+      <div class="show-date">July 11, 2025</div>
+      <div class="show-name">Craft Local</div>
+      <div class="show-extra">Doors open at 6pm. Pay what you can.</div>
+    </div>
+  </div>
+
   <div id="photoModal" class="modal">
     <span class="close" id="closeBtn">&times;</span>
     <img class="modal-content" id="modalImage" alt="Enlarged Show Flyer">
   </div>
 
-  <footer>
-      <p>2025 Laura Guerrero | All Rights Reserved</p>
-  </footer>
+  <footer class="site-footer" aria-label="Site footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="footer-wordmark" href="index.html" aria-label="SORRY, MAN home">SORRY, MAN<span class="footer-period">.</span></a>
+        <p>Rock. Funk. A little chaos.<br>Bozeman, Montana.</p>
+      </div>
+      <nav class="footer-group" aria-label="Footer navigation">
+        <h2>EXPLORE</h2>
+        <a href="index.html">Home</a>
+        <a href="about.html">About the band</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="showcase.html">Music</a>
+        <a href="upcoming.html">Shows</a>
+      </nav>
+      <div class="footer-group">
+        <h2>LISTEN</h2>
+        <a href="https://open.spotify.com/artist/35C8Cw4miTjf47vsxWReOQ" target="_blank" rel="noopener noreferrer">Spotify <span aria-hidden="true">↗</span></a>
+        <a href="https://music.apple.com/us/artist/sorry-man/1539362294" target="_blank" rel="noopener noreferrer">Apple Music <span aria-hidden="true">↗</span></a>
+        <a href="https://www.youtube.com/channel/UCOvNgJf-KdEIZP_Y8lzW1tQ" target="_blank" rel="noopener noreferrer">YouTube <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="footer-group">
+        <h2>FOLLOW</h2>
+        <a href="https://instagram.com/sorry_man_band" target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">↗</span></a>
+        <a href="https://www.facebook.com/profile.php?id=61576721317134" target="_blank" rel="noopener noreferrer">Facebook <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 SORRY, MAN. All rights reserved.</p>
+      <p>Website by Laura Guerrero</p>
+    </div>
+  </div>
+</footer>
 
   <script>
     const modal = document.getElementById('photoModal');
