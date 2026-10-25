@@ -157,3 +157,41 @@ footer.site-footer{background:#151715!important;color:#c3c9c1!important;border-t
 .site-footer .footer-bottom p{color:#919991!important;font-size:.76rem!important;line-height:1.6;letter-spacing:.02em!important;margin:0!important}
 @media(max-width:800px){.site-footer .footer-top{grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}.site-footer .footer-brand{grid-column:1/-1}}
 @media(max-width:480px){.site-footer .footer-inner{padding:44px 22px 22px}.site-footer .footer-top{grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 22px;padding-bottom:36px}.site-footer .footer-brand{grid-column:1/-1}.site-footer .footer-bottom{flex-direction:column;align-items:flex-start;gap:5px}}
+
+/* Footer color matches the header across all pages. */
+footer.site-footer { background: #1f1f1f !important; }
+.site-footer .footer-logo-link { display:inline-flex; align-items:center; gap:12px; text-decoration:none; max-width:100%; }
+.site-footer .footer-logo { width:52px; height:52px; object-fit:contain; flex:none; }
+.site-footer .footer-logo-link:focus-visible { outline:2px solid #4caf50; outline-offset:5px; }
+@media (max-width:480px) { .site-footer .footer-logo { width:44px; height:44px; } }
+
+/* Show flyers: preserve entire poster and avoid cropping/stretching on phones. */
+@media (max-width:600px) {
+  .show-container { width:calc(100% - 32px); max-width:440px; margin:24px auto !important; flex-direction:column; overflow:hidden; }
+  .show-container .show-photo { display:block; width:100%; height:auto; max-height: min(75vh, 560px); object-fit:contain; object-position:center; background:#222; border-radius:10px 10px 0 0; }
+  .show-container .show-details { width:100%; min-width:0; padding:18px 20px 22px; overflow-wrap:anywhere; }
+}
+
+/* Larger footer logo, stacked above the wordmark. */
+.site-footer .footer-logo-link { display:inline-flex; flex-direction:column; align-items:flex-start; gap:14px; }
+.site-footer .footer-logo { width:110px; height:110px; max-width:100%; object-fit:contain; }
+@media (max-width:480px) { .site-footer .footer-logo { width:100px; height:100px; } }
+
+/* On phones, place the footer logo beside the wordmark. */
+@media (max-width:600px) {
+  .site-footer .footer-logo-link { flex-direction:row; align-items:center; gap:12px; }
+  .site-footer .footer-logo { width:64px; height:64px; flex-shrink:0; }
+}
+
+/* Footer brand: desktop logo above text; mobile logo left of two-line text. */
+.site-footer .footer-brand-row{display:flex;flex-direction:column;align-items:flex-start;gap:14px}
+.site-footer .footer-logo-link{display:inline-flex;flex-direction:row;align-items:center;justify-content:center;gap:0}
+.site-footer .footer-brand-copy{min-width:0}
+.site-footer .footer-brand-copy p{margin:10px 0 0}
+@media(max-width:600px){
+ .site-footer .footer-brand-row{flex-direction:row;align-items:center;gap:18px}
+ .site-footer .footer-logo{width:84px;height:84px;max-width:none}
+ .site-footer .footer-brand-copy{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:6px}
+ .site-footer .footer-brand-copy .footer-wordmark{font-size:clamp(1.35rem,5vw,1.8rem);line-height:1.1;white-space:nowrap}
+ .site-footer .footer-brand-copy p{margin:0;font-size:.9rem;line-height:1.35}
+}

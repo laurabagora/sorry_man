@@ -1,96 +1,112 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/gallery.css">
-    <title>SORRY, MAN</title>
-    <link rel="stylesheet" href="css/redesign.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="css/gallery.css" rel="stylesheet"/>
+<title>SORRY, MAN</title>
+<link href="css/redesign.css" rel="stylesheet"/>
+
 </head>
 <body>
-  <header>
-      <a href="index.html" class="logo-section">
-          <img src="images/logo.png" alt="Sorry Man Logo" class="logo"> 
-          <h1>SORRY, MAN</h1>
+<header>
+<a class="logo-section" href="index.html">
+<img alt="Sorry Man Logo" class="logo" src="images/logo.png"/>
+<h1>SORRY, MAN</h1>
+</a>
+<nav>
+<div class="menu-toggle" id="mobile-menu">
+<span class="bar"></span>
+<span class="bar"></span>
+<span class="bar"></span>
+</div>
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="showcase.html">Music</a></li>
+<li><a href="upcoming.html">Shows</a></li>
+<li><a href="about.html">About</a></li>
+</ul>
+</nav>
+</header>
+<div aria-hidden="true" aria-label="Photo viewer" aria-modal="true" class="lightbox" id="lightbox" role="dialog">
+<button aria-label="Close photo viewer" class="lightbox-close" id="lightbox-close" type="button">×</button>
+<button aria-label="Previous photo" class="lightbox-arrow lightbox-prev" id="lightbox-prev" type="button">❮</button>
+<img alt="Expanded concert photograph" id="lightbox-img"/>
+<button aria-label="Next photo" class="lightbox-arrow lightbox-next" id="lightbox-next" type="button">❯</button>
+<div aria-live="polite" class="lightbox-count" id="lightbox-count"></div>
+</div>
+<main class="gallery-page">
+
+<div class="gallery-heading">
+  <section aria-label="Page introduction" class="page-intro">
+    <p class="page-kicker">SORRY, MAN / ON STAGE</p>
+    <h2 class="page-title">GALLERY</h2>
+    <p class="page-description">
+      Photography by <strong>John Guerrero</strong> · Instagram:
+      <a href="https://www.instagram.com/greenlightfotography/"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="Greenlight Photography on Instagram">
+        <strong>@greenlightfotography</strong>
       </a>
-      <nav>
-          <div class="menu-toggle" id="mobile-menu">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-          </div>
-          <ul class="nav-links">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="gallery.html">Gallery</a></li>
-              <li><a href="showcase.html">Music</a></li>
-              <li><a href="upcoming.html">Shows</a></li>
-              <li><a href="about.html">About</a></li>
-          </ul>
-      </nav>
-  </header>
-
-
-    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" aria-hidden="true">
-      <button class="lightbox-close" id="lightbox-close" type="button" aria-label="Close photo viewer">&times;</button>
-      <button class="lightbox-arrow lightbox-prev" id="lightbox-prev" type="button" aria-label="Previous photo">&#10094;</button>
-      <img alt="Expanded concert photograph" id="lightbox-img">
-      <button class="lightbox-arrow lightbox-next" id="lightbox-next" type="button" aria-label="Next photo">&#10095;</button>
-      <div class="lightbox-count" id="lightbox-count" aria-live="polite"></div>
-    </div>
-    <main class="gallery-page">
-      <div class="gallery-heading"><section class="page-intro" aria-label="Page introduction"><p class="page-kicker">SORRY, MAN / ON STAGE</p><h2 class="page-title">GALLERY</h2><p class="page-description">Photography by <strong>John Guerrero</strong> · Instagram: <strong>@Greenlightfotography</strong></p></section></div>
-      <section class="gallery" aria-label="Band photo gallery">
-        <img src="images/gallery/photo1.png" alt="SORRY, MAN live photo 1" loading="eager" decoding="async" tabindex="0">
-        <img src="images/gallery/photo3.png" alt="SORRY, MAN live photo 2" loading="eager" decoding="async" tabindex="0">
-        <img src="images/gallery/photo4.png" alt="SORRY, MAN live photo 3" loading="eager" decoding="async" tabindex="0">
-        <img src="images/gallery/photo5.png" alt="SORRY, MAN live photo 4" loading="lazy" decoding="async" tabindex="0">
-        <img src="images/gallery/photo6.png" alt="SORRY, MAN live photo 5" loading="lazy" decoding="async" tabindex="0">
-        <img src="images/gallery/photo7.png" alt="SORRY, MAN live photo 6" loading="lazy" decoding="async" tabindex="0">
-        <img src="images/gallery/photo8.png" alt="SORRY, MAN live photo 7" loading="lazy" decoding="async" tabindex="0">
-        <img src="images/gallery/photo9.png" alt="SORRY, MAN live photo 8" loading="lazy" decoding="async" tabindex="0">
-        <img src="images/gallery/photo10.png" alt="SORRY, MAN live photo 9" loading="lazy" decoding="async" tabindex="0">
-        <img src="images/gallery/photo11.png" alt="SORRY, MAN live photo 10" loading="lazy" decoding="async" tabindex="0">
-        <img src="images/gallery/photo12.png" alt="SORRY, MAN live photo 11" loading="lazy" decoding="async" tabindex="0">
-        <img src="images/gallery/photo13.png" alt="SORRY, MAN live photo 12" loading="lazy" decoding="async" tabindex="0">
-      </section>
-      <p class="gallery-hint">Tap a photo to see it full size <span aria-hidden="true">↗</span></p>
-    </main>
-
-    <footer class="site-footer" aria-label="Site footer">
-  <div class="footer-inner">
-    <div class="footer-top">
-      <div class="footer-brand">
-        <a class="footer-wordmark" href="index.html" aria-label="SORRY, MAN home">SORRY, MAN</a>
-        <p>Bozeman, Montana.</p>
-      </div>
-      <nav class="footer-group" aria-label="Footer navigation">
-        <h2>EXPLORE</h2>
-        <a href="index.html">Home</a>
-        <a href="about.html">About the band</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="showcase.html">Music</a>
-        <a href="upcoming.html">Shows</a>
-      </nav>
-      <div class="footer-group">
-        <h2>LISTEN</h2>
-        <a href="https://open.spotify.com/artist/35C8Cw4miTjf47vsxWReOQ" target="_blank" rel="noopener noreferrer">Spotify <span aria-hidden="true">↗</span></a>
-        <a href="https://music.apple.com/us/artist/sorry-man/1539362294" target="_blank" rel="noopener noreferrer">Apple Music <span aria-hidden="true">↗</span></a>
-        <a href="https://www.youtube.com/channel/UCOvNgJf-KdEIZP_Y8lzW1tQ" target="_blank" rel="noopener noreferrer">YouTube <span aria-hidden="true">↗</span></a>
-      </div>
-      <div class="footer-group">
-        <h2>FOLLOW</h2>
-        <a href="https://instagram.com/sorry_man_band" target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">↗</span></a>
-        <a href="https://www.facebook.com/profile.php?id=61576721317134" target="_blank" rel="noopener noreferrer">Facebook <span aria-hidden="true">↗</span></a>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>© 2026 SORRY, MAN. All rights reserved.</p>
-      <p>Website by Laura Guerrero</p>
-    </div>
-  </div>
+    </p>
+  </section>
+</div>
+<section aria-label="Band photo gallery" class="gallery">
+<img alt="SORRY, MAN live photo 1" decoding="async" loading="eager" src="images/gallery/photo1.png" tabindex="0"/>
+<img alt="SORRY, MAN live photo 2" decoding="async" loading="eager" src="images/gallery/photo3.png" tabindex="0"/>
+<img alt="SORRY, MAN live photo 3" decoding="async" loading="eager" src="images/gallery/photo4.png" tabindex="0"/>
+<img alt="SORRY, MAN live photo 4" decoding="async" loading="lazy" src="images/gallery/photo5.png" tabindex="0"/>
+<img alt="SORRY, MAN live photo 5" decoding="async" loading="lazy" src="images/gallery/photo6.png" tabindex="0"/>
+<img alt="SORRY, MAN live photo 6" decoding="async" loading="lazy" src="images/gallery/photo7.png" tabindex="0"/>
+<img alt="SORRY, MAN live photo 7" decoding="async" loading="lazy" src="images/gallery/photo8.png" tabindex="0"/>
+<img alt="SORRY, MAN live photo 8" decoding="async" loading="lazy" src="images/gallery/photo9.png" tabindex="0"/>
+<img alt="SORRY, MAN live photo 9" decoding="async" loading="lazy" src="images/gallery/photo10.png" tabindex="0"/>
+<img alt="SORRY, MAN live photo 10" decoding="async" loading="lazy" src="images/gallery/photo11.png" tabindex="0"/>
+<img alt="SORRY, MAN live photo 11" decoding="async" loading="lazy" src="images/gallery/photo12.png" tabindex="0"/>
+<img alt="SORRY, MAN live photo 12" decoding="async" loading="lazy" src="images/gallery/photo13.png" tabindex="0"/>
+</section>
+<p class="gallery-hint">Tap a photo to see it full size </p>
+</main>
+<footer aria-label="Site footer" class="site-footer">
+<div class="footer-inner">
+<div class="footer-top">
+<div class="footer-brand">
+<div class="footer-brand-row">
+<a aria-label="SORRY, MAN home" class="footer-logo-link" href="index.html"><img alt="" class="footer-logo" height="110" src="images/logo.png" width="110"/></a>
+<div class="footer-brand-copy"><a class="footer-wordmark" href="index.html">SORRY, MAN</a><p>Bozeman, Montana.</p></div>
+</div>
+</div>
+<nav aria-label="Footer navigation" class="footer-group">
+<h2>EXPLORE</h2>
+<a href="index.html">Home</a>
+<a href="about.html">About the band</a>
+<a href="gallery.html">Gallery</a>
+<a href="showcase.html">Music</a>
+<a href="upcoming.html">Shows</a>
+</nav>
+<div class="footer-group">
+<h2>LISTEN</h2>
+<a href="https://open.spotify.com/artist/35C8Cw4miTjf47vsxWReOQ" rel="noopener noreferrer" target="_blank">Spotify </a>
+<a href="https://music.apple.com/us/artist/sorry-man/1539362294" rel="noopener noreferrer" target="_blank">Apple Music </a>
+<a href="https://www.youtube.com/channel/UCOvNgJf-KdEIZP_Y8lzW1tQ" rel="noopener noreferrer" target="_blank">YouTube </a>
+</div>
+<div class="footer-group">
+<h2>FOLLOW</h2>
+<a href="https://instagram.com/sorry_man_band" rel="noopener noreferrer" target="_blank">Instagram </a>
+<a href="https://www.facebook.com/profile.php?id=61576721317134" rel="noopener noreferrer" target="_blank">Facebook </a>
+</div>
+</div>
+<div class="footer-bottom">
+<p>© 2026 SORRY, MAN. All rights reserved.</p>
+<p>Website by Laura Guerrero</p>
+</div>
+</div>
 </footer>
-    <script>
+<script>
       const menuToggle = document.getElementById('mobile-menu');
       const navLinks = document.querySelector('.nav-links');
       menuToggle.addEventListener('click', () => {

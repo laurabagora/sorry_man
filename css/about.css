@@ -450,3 +450,9 @@ footer {
     padding: 12px 20px; 
   }
 }
+
+/* Taller member portraits on Home and About, including iPhone screens. */
+.band-member-card .info-card-img { height: 260px; object-fit: cover; object-position: center top; }
+@media (max-width: 600px) {
+  .band-member-card .info-card-img { height: 250px; object-position: center top; }
+}
